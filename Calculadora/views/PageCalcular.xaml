@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.views.PageCalcular">
+
+    
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="#FF452F" >
+            <Frame BackgroundColor="ForestGreen" Padding="15" CornerRadius="0"  Margin="10,10,10,5">
+                <Label Text="CALCULADORA" HorizontalTextAlignment="Center" TextColor="Black" FontSize="25"/>
+            </Frame>
+           
+
+            <Entry Keyboard="Numeric"
+                   Placeholder="Ingrese Numero 1"
+                   x:Name="numero1"
+                   Margin="50,5,50,5"
+                   BackgroundColor="DeepSkyBlue"/>
+
+            <Entry Keyboard="Numeric"
+                   Placeholder="Ingrese Numero 2"
+                   x:Name="numero2"
+                   Margin="50,5,50,5"
+                   BackgroundColor="DeepSkyBlue"/>
+
+            <Button Text="Suma" x:Name="btnsuma" Clicked="btnsuma_Clicked"
+                    BackgroundColor="LawnGreen" TextColor="Black"
+                    
+                    Margin="50,30,50,5"
+                    />
+            
+            <Button Text="Resta" x:Name="btnResta" Clicked="btnResta_Clicked"
+                    BackgroundColor="LawnGreen" TextColor="Black"
+                    
+                    Margin="50,5,50,5"/>
+            <Button Text="Multiplicacion" x:Name="btnMulti" Clicked="btnMulti_Clicked" 
+                    BackgroundColor="LawnGreen" TextColor="Black"
+                    Margin="50,5,50,5"
+                    />
+            <Button Text="Division" x:Name="btnDiv" Clicked="btnDiv_Clicked"
+                    BackgroundColor="LawnGreen" TextColor="Black"
+                    Margin="50,5,50,5"
+                    BorderColor="Black"/>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
